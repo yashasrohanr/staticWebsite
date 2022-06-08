@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/PNG_files/new1.png);
+  height: 100vh;
+}
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  margin: 2px;
+  box-shadow: 0px 0px 10px 5px #1a1717;
+  width: 380px;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 0 0 10px 0;
+  padding-bottom: 5px;
+  color: whitesmoke;
+}
+.center form {
+  padding: 0px 40px;
+  box-sizing: border-box;
+}
+
+form .txt-field {
+  position: relative;
+  margin: 10px 0;
+}
+.txt-field input {
+  width: 94%;
+  padding: 0 5px;
+  height: 35px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 2px;
+}
+.txt-field {
+  position: relative;
+}
+.txt-field > img {
+  position: absolute;
+  top: 13px;
+  left: 8px;
+}
+.txt-field > input {
+  padding-left: 40px;
+}
+
+.pass a {
+  color: rgb(231, 230, 226);
+  font-size: 12px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.pass a:hover {
+  color: green;
+}
+input[type="submit"] {
+  width: 108.5%;
+  color: rgb(232, 232, 239);
+  background-color: #2691d9;
+  /* height: 35px; */
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  border-color: #2691d9;
+  transition-delay: 0.1s;
+}
+.signup_link {
+  margin: 15px 0;
+  text-align: center;
+  font-size: 13px;
+  color: whitesmoke;
+}
+.signup_link a {
+  text-decoration: none;
+  color: lightseagreen;
+}
+#or_login_with {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  font-size: 13px;
+}
+.col {
+  width: 100%;
+  margin: auto;
+  display: inline-block;
+  position: relative;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  margin: 2px 0;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3b5998;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.instagram {
+  background-color: #c13584;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
