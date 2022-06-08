@@ -9,7 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-
+    <script>
+      function formSubmit(){
+          console.log("form submitted");
+      }
+      function func1(){
+          console.log("facebook login clicked");
+          return true;
+      }
+      function func2(){
+          console.log("instagram login clicked");
+          return true;
+      }
+      function func3(){
+          console.log("new signup requested");
+          return true;
+      }
+       function func4(){
+          console.log("New/Change password");
+          return true;
+      }
+    </script>
     <div class="center">
         <h1>Login Form  </h1>
         <form method="">
@@ -22,9 +42,9 @@
                 <input type = "password" placeholder = "Password"/ required>
             </div>
             <div class="pass" >
-                <a href="#">Forgot Password ?</a>
+                <a href="#" onclick="return func4()">Forgot Password ?</a>
             </div>
-            <input type="Submit" value="LOGIN" class = "Login">
+            <input type="Submit" value="LOGIN" class = "Login" onclick="formSubmit()">
             <br>
             <div id = "or_login_with">Or login with</div>
 
@@ -32,10 +52,10 @@
            <!-- /*     Section where social media  buttons are added                      */ -->
 
             <div class="col" >
-                <a href="//www.facebook.com" class="fb btn">
+                <a href="#" class="fb btn" onclick="return func1()">
                     <i class="fa fa-facebook fa-fw"></i> facebook
                 </a>    
-                <a href="//www.instagram.com" class="instagram btn">
+                <a href="#" class="instagram btn" onclick="return func2()">
                     <i class="fa fa-instagram "></i> Instagram
                 </a>
                 
@@ -45,7 +65,7 @@
 
 
             <div class="signup_link">Don't have an account ?
-                <a href="#">Signup Now</a>
+                <a href="#" onclick="return func3()" >Signup Now</a>
             </div>
         </form>
     </div>  
